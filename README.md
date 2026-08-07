@@ -8,9 +8,11 @@ This repository is designed for recruiters, hiring managers, and collaborators w
 
 | Project | Type | Status | Highlights |
 | --- | --- | --- | --- |
-| [CardsNest](projects/cardsnest.md) | SwiftUI iOS app + App Store brand site | Private source, public site | Credit card discovery, comparison, local wallet tracking, privacy-first App Store support pages |
-| [Voyva](projects/voyva.md) | Expo / React Native app + App Store brand site | Private source, public site | Mobile travel/productivity app foundation, multilingual-ready stack, Cloudflare Pages launch site |
+| [Voyva](projects/voyva.md) | Expo / React Native + web + Cloudflare Workers | **Live on the App Store** (v1.2) and the web | AI itinerary editing by voice, patch-op architecture that edits a 53-day trip in ~2s, multi-provider LLM failover, server-side audio DSP |
+| [CardsNest](projects/cardsnest.md) | SwiftUI iOS app + App Store brand site | **Live on the App Store** (v1.4) | Credit card discovery and comparison, local-only wallet tracking, four languages, privacy-first by design |
 | [SWE Practice Project](projects/swe-practice-project.md) | Public practice repository | Public | Repository for software engineering practice and project experiments |
+
+Both apps are published by Trinity Management Services LLC and were taken from idea to App Store single-handedly — product, design, iOS, web, backend, review submissions and release process.
 
 ## Why This Repo Exists
 
@@ -27,6 +29,8 @@ I keep some production repositories private because they may include full app so
 
 ## Public Links
 
+- Voyva on the App Store: https://apps.apple.com/app/id6774875723
+- Voyva web app: https://app.voyva.app
 - CardsNest site: https://cardsnest.tmslabs.net/
 - CardsNest privacy: https://cardsnest.tmslabs.net/privacy
 - CardsNest support: https://cardsnest.tmslabs.net/support

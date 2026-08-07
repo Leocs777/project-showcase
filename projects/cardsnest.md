@@ -1,6 +1,6 @@
 # CardsNest Case Study
 
-CardsNest is an iOS app for browsing, comparing, and locally tracking U.S. credit cards. The production source repository remains private; this page summarizes the product and engineering work in a recruiter-friendly format.
+CardsNest is an iOS app for browsing, comparing, and locally tracking U.S. credit cards — live on the App Store, currently v1.4. The production source repository remains private; this page summarizes the product and engineering work in a recruiter-friendly format.
 
 ## Product Summary
 
@@ -8,6 +8,7 @@ CardsNest helps users compare credit cards, track cards they own, manage annual 
 
 ## Public URLs
 
+- App Store: https://apps.apple.com/app/id6775310510
 - Marketing: https://cardsnest.tmslabs.net/
 - Privacy Policy: https://cardsnest.tmslabs.net/privacy
 - Support: https://cardsnest.tmslabs.net/support
