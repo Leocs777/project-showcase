@@ -8,11 +8,12 @@ This repository is designed for recruiters, hiring managers, and collaborators w
 
 | Project | Type | Status | Highlights |
 | --- | --- | --- | --- |
+| [Investor Lab](projects/investor-lab.md) | SwiftUI iOS + responsive web + local Python/SQLite backend | **Private beta / personal testing** | Explainable stock research, options and day-trade planning, Web/iOS sync, append-only journal, safety-gated Alpaca Paper execution |
 | [Voyva](projects/voyva.md) | Expo / React Native + web + Cloudflare Workers | **Live on the App Store** (v1.2) and the web | AI itinerary editing by voice, patch-op architecture that edits a 53-day trip in ~2s, multi-provider LLM failover, server-side audio DSP |
 | [CardsNest](projects/cardsnest.md) | SwiftUI iOS app + App Store brand site | **Live on the App Store** (v1.4) | Credit card discovery and comparison, local-only wallet tracking, four languages, privacy-first by design |
 | [SWE Practice Project](projects/swe-practice-project.md) | Public practice repository | Public | Repository for software engineering practice and project experiments |
 
-Both apps are published by Trinity Management Services LLC and were taken from idea to App Store single-handedly — product, design, iOS, web, backend, review submissions and release process.
+Voyva and CardsNest are published by Trinity Management Services LLC and were taken from idea to App Store single-handedly — product, design, iOS, web, backend, review submissions and release process.
 
 ## Why This Repo Exists
 
@@ -40,6 +41,6 @@ I keep some production repositories private because they may include full app so
 
 ## Repository Policy
 
-This is a portfolio and case-study repository. It does not contain production secrets, private app source code, API keys, customer data, or full internal project history.
+This is a portfolio and case-study repository. It does not contain production secrets, private app source code, API keys, customer data, personal investment records, or full internal project history.
 
 If deeper review is needed, I can provide a guided demo, screenshots, architecture walkthrough, or selected sanitized code samples.
