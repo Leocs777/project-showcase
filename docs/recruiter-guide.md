@@ -8,7 +8,8 @@ This repository is a short, safe portfolio view of selected projects. It is opti
 2. Read `projects/investor-lab.md` for local-first systems design, deterministic financial analysis, cross-platform sync, and safety-gated broker integration.
 3. Read `projects/cardsnest.md` for the strongest shipped SwiftUI product example.
 4. Read `projects/voyva.md` for AI orchestration, Expo / React Native, and cross-platform delivery.
-5. Review `projects/swe-practice-project.md` for public practice work.
+5. Read `projects/study-softtrack.md` for focused product design, a shared Web/iOS implementation, native reminders, and recoverable local-first data.
+6. Review `projects/swe-practice-project.md` for public practice work.
 
 ## What This Demonstrates
 
@@ -26,6 +27,7 @@ This repository is a short, safe portfolio view of selected projects. It is opti
 - Unpublished implementation details
 - User or customer data
 - Personal investment, watchlist, journal, or brokerage data
+- Personal study records, real course schedules, original course documents, device identifiers, or cloud backup paths
 
 ## Follow-Up Material Available On Request
 

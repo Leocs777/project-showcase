@@ -9,6 +9,7 @@ This repository is designed for recruiters, hiring managers, and collaborators w
 | Project | Type | Status | Highlights |
 | --- | --- | --- | --- |
 | [Investor Lab](projects/investor-lab.md) | SwiftUI iOS + responsive web + local Python/SQLite backend | **Private beta / personal testing** | Explainable stock research, options and day-trade planning, Web/iOS sync, append-only journal, safety-gated Alpaca Paper execution |
+| [Study Softtrack](projects/study-softtrack.md) | React / TypeScript + Capacitor iOS + Swift integrations | **Private personal testing** | Editable study plans, daily checklists, context-aware scheduling, iOS and Apple Reminders, recoverable iCloud file backups |
 | [Voyva](projects/voyva.md) | Expo / React Native + web + Cloudflare Workers | **Live on the App Store** (v1.2) and the web | AI itinerary editing by voice, patch-op architecture that edits a 53-day trip in ~2s, multi-provider LLM failover, server-side audio DSP |
 | [CardsNest](projects/cardsnest.md) | SwiftUI iOS app + App Store brand site | **Live on the App Store** (v1.4) | Credit card discovery and comparison, local-only wallet tracking, four languages, privacy-first by design |
 | [SWE Practice Project](projects/swe-practice-project.md) | Public practice repository | Public | Repository for software engineering practice and project experiments |
