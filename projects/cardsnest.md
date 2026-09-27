@@ -1,10 +1,10 @@
 # CardsNest Case Study
 
-CardsNest is an iOS app for browsing, comparing, and locally tracking U.S. credit cards — live on the App Store, currently v1.4. The production source repository remains private; this page summarizes the product and engineering work in a recruiter-friendly format.
+CardsNest is a credit-card discovery and wallet-tracking app for iOS and Android. Version 1.4.2 is live on the App Store; the 1.4.3 iOS release candidate has been uploaded to App Store Connect and is being prepared for review. The production source repository remains private; this page describes the product and engineering work without mirroring private source or release materials.
 
 ## Product Summary
 
-CardsNest helps users compare credit cards, track cards they own, manage annual fee awareness, and follow statement-credit usage. The app is designed around local-first personal finance tracking: it does not require a user account and does not connect to bank accounts.
+CardsNest helps people compare U.S. credit cards and track the benefits on cards they already hold. The current live version keeps wallet records on the device without requiring an account. The 1.4.3 release candidate adds optional Apple or Google sign-in to sync selected wallet records across devices. CardsNest does not connect to bank accounts.
 
 ## Public URLs
 
@@ -16,35 +16,39 @@ CardsNest helps users compare credit cards, track cards they own, manage annual 
 
 ## Technical Stack
 
-- SwiftUI iOS app
-- Local persistence with `UserDefaults`
-- Multilingual app experience: English, Simplified Chinese, Traditional Chinese, and Spanish
-- Static App Store support site deployed through Cloudflare Pages
-- GitHub-backed deployment workflow for public legal/support pages
+- SwiftUI iOS app and a native Java Android client
+- Local-first guest storage, with optional Cloudflare Worker and D1 account sync
+- Apple and Google sign-in with server-verified identities and device-bound handoff
+- English, Simplified Chinese, Traditional Chinese, and Spanish interfaces
+- Static marketing and support site deployed with Cloudflare Pages
+- Versioned public card and news feeds kept separate from private wallet records
 
 ## Implementation Highlights
 
-- Built a browsable card catalog with 179 credit card entries.
-- Added search, filtering, and comparison workflows for up to three cards.
-- Implemented a local wallet tracker with card nicknames, open dates, annual fee awareness, notes, and statement-credit checklist state.
-- Added graceful image fallback behavior when remote card art cannot load.
-- Designed App Store-ready support surfaces: marketing page, privacy policy, support page, terms, robots.txt, sitemap.xml, and deployment README.
-- Kept sensitive wallet data local and separated public web assets from app source.
+- Built a searchable catalog of 185 credit cards with issuer, product, tier, and availability filters, plus side-by-side comparison for up to three cards.
+- Created wallet tracking for card dates, annual-fee recovery, recurring credits, editable estimated values, free-night awards, companion certificates, bonus goals, and usage history.
+- Kept guest use available without registration; added optional account sync, portable backups, sign-out, and account deletion in the 1.4.3 release candidate.
+- Added revision-aware per-record wallet merging so independent changes can sync without replacing an entire device snapshot in the 1.4.3 release candidate.
+- Bundled authentic card artwork where available and retained a local fallback for image failures.
+- Built public marketing, privacy, support, terms, and data-feed surfaces for the App Store product.
 
-## Privacy And Compliance Decisions
+## Privacy And Reliability Decisions
 
-CardsNest is intentionally built without bank-account linking. The public privacy policy explains that wallet entries, card nicknames, last-four digits if entered, open dates, notes, and preferences are stored locally on device. Anonymous analytics are opt-in and disabled unless a backend is configured.
+The app never asks for bank credentials or full card numbers. Guest records remain on the device. When a user enables account sync, the service receives the sign-in email and selected wallet records over HTTPS; synced data is not end-to-end encrypted. Sign-in credentials are handled by Apple or Google, and provider passwords are not sent to CardsNest. Users can export a backup, sign out, and request account deletion.
 
-The terms page includes financial disclaimer language, referral-link disclosure, issuer independence, and offer-accuracy caveats appropriate for a credit card comparison tool.
+Public catalog and news updates use a versioned feed kept separate from account data so content changes can remain compatible with released clients. Benefit values and eligibility can change, so the app directs users to verify current terms with the card issuer.
+
+## Verification
+
+The iOS release candidate was archived and uploaded to App Store Connect. Android API 36 emulator checks cover catalog, tracking, navigation, persistence, import, and OAuth callback handling. The account service has automated checks for identity validation, replay protection, revisions, deletion, and portable records. A full native cross-platform sync walkthrough remains a separate release-validation item.
 
 ## What I Owned
 
-- Product naming and App Store support URL strategy
-- iOS feature scope and data model decisions
-- Multilingual support strategy
-- Privacy and terms drafting for launch readiness
-- Static brand site build, Cloudflare Pages deployment, DNS setup, and HTTPS validation
+- Product scope, information architecture, and localization
+- iOS and Android clients, wallet data model, and cross-device merge behavior
+- Optional account service and public marketing/support site
+- Card-data quality workflow, App Store materials, and release operations
 
 ## Safe Review Notes
 
-The private production repo is not mirrored here because it may contain full source, historical commits, internal implementation details, and App Store launch materials. Sanitized code samples or a guided walkthrough can be shared separately when appropriate.
+The private production repository is not mirrored here. This case study excludes source code, credentials, account and team identifiers, customer data, local build artifacts, private commit history, and unpublished operational configuration.
